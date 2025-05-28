@@ -1,4 +1,4 @@
-package clientes.model.entity;
+package javinha.rsc.clientes.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
