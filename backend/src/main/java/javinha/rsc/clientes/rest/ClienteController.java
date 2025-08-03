@@ -56,7 +56,7 @@ public class ClienteController {
 //                    clienteAtualizado.setDataCadastro(cliente.getDataCadastro()); //manter a data de cadastro
                     cliente.setNome(clienteAtualizado.getNome());
                     cliente.setCpf(clienteAtualizado.getCpf());
-                    return repository.save(clienteAtualizado);
+                    return repository.save(cliente);
                 })
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 

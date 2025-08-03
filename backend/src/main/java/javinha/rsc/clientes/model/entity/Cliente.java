@@ -10,8 +10,8 @@ import java.time.LocalDate;
 
 @Entity
 @Data  // @Getter@Setter Adiciona getter, setter - @data é get,set e todo o resto
-//@NoArgsConstructor // Adiciona um construtor sem argumentos
-//@AllArgsConstructor // Adiciona um construturo com argumentos
+@NoArgsConstructor // Adiciona um construtor sem argumentos
+@AllArgsConstructor // Adiciona um construturo com argumentos
 @Builder // Adiciona um construtor padrão builder
 public class Cliente {
     @Id
