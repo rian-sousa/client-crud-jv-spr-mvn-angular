@@ -1,5 +1,6 @@
 package javinha.rsc.clientes.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -27,7 +28,8 @@ public class Cliente {
     @CPF(message = "{campo.cpf.invalido}")
     private String cpf;
 
-    @Column(name = "data_cadastro")
+    @Column(name = "data_cadastro", updatable = false)
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
 
     @PrePersist
