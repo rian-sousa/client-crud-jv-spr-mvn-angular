@@ -16,7 +16,7 @@ public class InternacionalizacaoConfig {
     @Bean
     public MessageSource messageSource(){
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("javinha.rsc.clientes.config.messages");
+        messageSource.setBasename("classpath:messages");
         messageSource.setDefaultEncoding("ISO-8859-1");
         messageSource.setDefaultLocale(Locale.getDefault());
 
